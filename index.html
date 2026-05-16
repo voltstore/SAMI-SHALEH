@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="مؤسسة مقاولات المدينة - شركة مقاولات سعودية رائدة في البناء والإنشاء والتشطيبات والترميم وإدارة المشاريع الهندسية في المدينة المنورة." />
+<meta name="keywords" content="مقاولات, بناء, تشطيبات, ترميم, المدينة المنورة, السعودية, هندسة" />
+<meta property="og:title" content="مؤسسة مقاولات المدينة | Madinah Contracting Establishment" />
+<meta property="og:description" content="نبني أحلامكم على أرض الواقع — جودة لا تساوم، إتقان لا يُضاهى." />
+<meta property="og:type" content="website" />
+<title>مؤسسة مقاولات المدينة | Madinah Contracting Establishment</title>
+
+<!-- Early theme/lang to prevent FOUC -->
+<script>
+  (function() {
+    try {
+      var t = localStorage.getItem('mc_theme');
+      var l = localStorage.getItem('mc_lang');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      if (l === 'ar' || l === 'en') {
+        document.documentElement.lang = l;
+        document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Cpath d='M20 75 L20 40 L50 20 L80 40 L80 75 Z' fill='none' stroke='%23FFD700' stroke-width='6' stroke-linejoin='round'/%3E%3Crect x='40' y='55' width='20' height='20' fill='%23FFD700'/%3E%3C/svg%3E" />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<style>
+  :root {
+    --accent: #FFD700;
+    --accent-2: #FFC107;
+    --accent-soft: rgba(255, 215, 0, 0.15);
+    --whatsapp: #25D366;
+    --whatsapp-dark: #128C7E;
+    --radius: 14px;
+    --radius-lg: 24px;
+    --shadow-sm: 0 4px 14px rgba(0,0,0,0.15);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.25);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.35);
+    --transition: 0.4s cubic-bezier(.2,.7,.2,1);
+    --font-ar: 'Tajawal', 'Cairo', sans-serif;
+    --font-en: 'Poppins', 'Montserrat', sans-serif;
+  }
+
+  [data-theme="dark"] {
+    --bg: #0a0a0a;
+    --bg-2: #111111;
+    --surface: #161616;
+    --surface-2: #1d1d1d;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.18);
+    --text: #f5f5f5;
+    --text-soft: #b8b8b8;
+    --text-muted: #828282;
+    --overlay-grad: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.85) 100%);
+    --glass: rgba(10,10,10,0.65);
+  }
+
+  [data-theme="light"] {
+    --bg: #ffffff;
+    --bg-2: #fafafa;
+    --surface: #ffffff;
+    --surface-2: #f4f4f4;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.18);
+    --text: #111111;
+    --text-soft: #3d3d3d;
+    --text-muted: #757575;
+    --overlay-grad: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.75) 100%);
+    --glass: rgba(255,255,255,0.75);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-ar);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+    transition: background var(--transition), color var(--transition);
+    -webkit-font-smoothing: antialiased;
+  }
+  html[lang="en"] body { font-family: var(--font-en); line-height: 1.6; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+  ul { list-style: none; }
+
+  .container { width: 100%; max-width: 1280px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
+  .section { padding-block: clamp(60px, 9vw, 120px); position: relative; }
+  .section-label {
+    display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.25em;
+    color: var(--accent); text-transform: uppercase; margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: clamp(28px, 4.5vw, 48px); font-weight: 900; line-height: 1.15;
+    letter-spacing: -0.02em; margin-bottom: 20px;
+  }
+  .section-subtitle {
+    font-size: clamp(15px, 1.6vw, 18px); color: var(--text-soft); max-width: 680px;
+  }
+  .section-head { text-align: center; margin: 0 auto clamp(40px, 6vw, 70px); }
+  .section-head .section-subtitle { margin-inline: auto; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 14px 28px; font-weight: 700; font-size: 15px;
+    border-radius: 999px; border: 2px solid transparent;
+    transition: transform var(--transition), background var(--transition), color var(--transition), box-shadow var(--transition);
+    white-space: nowrap;
+  }
+  .btn-primary { background: var(--accent); color: #0a0a0a; box-shadow: 0 8px 24px rgba(255,215,0,0.25); }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(255,215,0,0.4); }
+  .btn-outline { border-color: var(--text); color: var(--text); }
+  .btn-outline:hover { background: var(--text); color: var(--bg); transform: translateY(-3px); }
+  .btn-whatsapp { background: var(--whatsapp); color: #fff; box-shadow: 0 10px 30px rgba(37,211,102,0.35); }
+  .btn-whatsapp:hover { background: var(--whatsapp-dark); transform: translateY(-3px) scale(1.02); }
+
+  .header {
+    position: fixed; top: 0; inset-inline: 0; z-index: 1000;
+    padding: 18px 0; transition: all var(--transition);
+    background: transparent;
+  }
+  .header.scrolled {
+    background: var(--glass);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .logo {
+    display: flex; align-items: center; gap: 12px; font-weight: 900;
+    font-size: clamp(16px, 2vw, 20px); letter-spacing: -0.01em;
+  }
+  .logo-icon {
+    width: 42px; height: 42px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: grid; place-items: center; color: #0a0a0a; font-size: 20px;
+    box-shadow: 0 6px 18px rgba(255,215,0,0.3);
+  }
+  .logo-text { color: var(--text); white-space: nowrap; line-height: 1.15; }
+  .logo-text small { display: block; font-size: 10px; font-weight: 500; color: var(--text-muted); letter-spacing: 0.2em; }
+
+  .nav-links { display: flex; gap: 6px; align-items: center; }
+  .nav-link {
+    position: relative; padding: 10px 16px; font-size: 15px; font-weight: 600;
+    color: var(--text-soft); transition: color var(--transition);
+  }
+  .nav-link::after {
+    content: ''; position: absolute; bottom: 4px; inset-inline-start: 16px; inset-inline-end: 16px;
+    height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: center;
+    transition: transform var(--transition);
+  }
+  .nav-link:hover { color: var(--text); }
+  .nav-link:hover::after { transform: scaleX(1); }
+
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+  .icon-btn {
+    width: 42px; height: 42px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 17px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); transition: all var(--transition);
+  }
+  .icon-btn:hover { background: var(--accent); color: #0a0a0a; border-color: var(--accent); transform: rotate(15deg) scale(1.08); }
+  .lang-btn { width: auto; padding: 0 16px; gap: 8px; font-weight: 700; font-size: 13px; letter-spacing: 0.05em; }
+  .lang-btn:hover { transform: scale(1.05); }
+  .hamburger { display: none; }
+
+  .mobile-drawer {
+    position: fixed; top: 0; inset-inline-end: 0;
+    width: min(320px, 85vw); height: 100vh;
+    background: var(--bg-2); border-inline-start: 1px solid var(--border);
+    transition: transform var(--transition);
+    z-index: 1100; padding: 80px 28px 28px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  html[dir="rtl"] .mobile-drawer { transform: translateX(-100%); }
+  html[dir="ltr"] .mobile-drawer { transform: translateX(100%); }
+  .mobile-drawer.open { transform: translateX(0) !important; }
+  .mobile-drawer .nav-link { font-size: 17px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .mobile-drawer .nav-link::after { display: none; }
+  .drawer-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+    z-index: 1050; opacity: 0; pointer-events: none; transition: opacity var(--transition);
+  }
+  .drawer-backdrop.open { opacity: 1; pointer-events: auto; }
+  .drawer-close {
+    position: absolute; top: 18px; inset-inline-end: 18px;
+    width: 38px; height: 38px;
+  }
+
+  .hero {
+    position: relative; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    overflow: hidden; isolation: isolate;
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: -2;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2418 50%, #1a1a1a 100%);
+    background-size: cover; background-position: center;
+  }
+  .hero-bg img {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.55;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0; z-index: -1;
+    background: var(--overlay-grad);
+  }
+  .hero::after {
+    content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 28px 28px; opacity: 0.4;
+  }
+  .hero-content { max-width: 980px; padding: 120px 20px 80px; color: #fff; }
+  .hero-eyebrow {
+    display: inline-block; padding: 8px 20px; border-radius: 999px;
+    background: rgba(255,215,0,0.18); color: var(--accent);
+    font-size: 13px; font-weight: 700; letter-spacing: 0.18em;
+    border: 1px solid rgba(255,215,0,0.4); margin-bottom: 24px;
+    animation: heroFade 0.9s 0.1s both;
+  }
+  .hero h1 {
+    font-size: clamp(34px, 6.5vw, 76px); font-weight: 900; line-height: 1.05;
+    letter-spacing: -0.025em; margin-bottom: 24px;
+    animation: heroFade 1s 0.3s both;
+  }
+  .hero p {
+    font-size: clamp(15px, 2vw, 20px); color: rgba(255,255,255,0.85);
+    max-width: 720px; margin: 0 auto 36px;
+    animation: heroFade 1s 0.5s both;
+  }
+  .hero-ctas {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    animation: heroFade 1s 0.7s both;
+  }
+  .hero .btn-outline { color: #fff; border-color: #fff; }
+  .hero .btn-outline:hover { background: #fff; color: #0a0a0a; }
+  @keyframes heroFade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+  .scroll-indicator {
+    position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+    color: rgba(255,255,255,0.7); font-size: 22px; animation: bounce 2.2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); opacity: 0.7; }
+    50% { transform: translate(-50%, 12px); opacity: 1; }
+  }
+
+  .stats {
+    background: var(--bg-2); border-block: 1px solid var(--border);
+    padding-block: clamp(50px, 7vw, 90px);
+  }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+  .stat { text-align: center; }
+  .stat-num {
+    font-size: clamp(38px, 5.5vw, 62px); font-weight: 900;
+    color: var(--accent); letter-spacing: -0.02em; line-height: 1;
+    display: flex; align-items: baseline; justify-content: center; gap: 4px;
+  }
+  .stat-num small { font-size: 0.6em; }
+  .stat-label { margin-top: 12px; color: var(--text-soft); font-weight: 600; font-size: clamp(13px, 1.4vw, 16px); }
+
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 6vw, 70px); align-items: center; }
+  .about-image {
+    position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  .about-image img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4/5; }
+  .about-image .badge {
+    position: absolute; bottom: 30px; inset-inline-end: 30px;
+    width: 130px; height: 130px; border-radius: 50%;
+    background: var(--accent); color: #0a0a0a; display: grid; place-items: center;
+    text-align: center; font-weight: 900; padding: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    z-index: 2;
+  }
+  .about-text h2 { font-size: clamp(28px, 4.5vw, 46px); font-weight: 900; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 18px; }
+  .about-text p { color: var(--text-soft); margin-bottom: 16px; }
+  .about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 26px; }
+  .about-feature { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--text); }
+  .about-feature i { color: var(--accent); font-size: 18px; }
+
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .service-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 36px 28px;
+    transition: all var(--transition); position: relative; overflow: hidden;
+  }
+  .service-card::before {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,215,0,0.08), transparent 50%);
+    opacity: 0; transition: opacity var(--transition);
+  }
+  .service-card:hover { transform: translateY(-8px); border-color: var(--accent); box-shadow: 0 20px 40px rgba(255,215,0,0.12); }
+  .service-card:hover::before { opacity: 1; }
+  .service-icon {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: var(--accent-soft); color: var(--accent);
+    display: grid; place-items: center; font-size: 26px; margin-bottom: 22px;
+    transition: all var(--transition); position: relative; z-index: 1;
+  }
+  .service-card:hover .service-icon { background: var(--accent); color: #0a0a0a; transform: scale(1.08) rotate(-5deg); }
+  .service-card h3 { font-size: 21px; font-weight: 800; margin-bottom: 10px; position: relative; z-index: 1; }
+  .service-card p { color: var(--text-soft); font-size: 15px; position: relative; z-index: 1; }
+  .service-link {
+    margin-top: 18px; display: inline-flex; align-items: center; gap: 8px;
+    color: var(--accent); font-weight: 700; font-size: 14px; position: relative; z-index: 1;
+  }
+  .service-link i { transition: transform var(--transition); }
+  html[dir="rtl"] .service-link i { transform: scaleX(-1); }
+  .service-card:hover .service-link i { transform: translateX(4px); }
+  html[dir="rtl"] .service-card:hover .service-link i { transform: translateX(-4px) scaleX(-1); }
+
+  .projects { background: var(--bg-2); }
+  .project-filters {
+    display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .filter-btn {
+    padding: 10px 22px; border-radius: 999px; font-weight: 700; font-size: 14px;
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text-soft); transition: all var(--transition);
+  }
+  .filter-btn.active, .filter-btn:hover { background: var(--accent); color: #0a0a0a; border-color: var(--accent); }
+  .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .project-card {
+    position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    aspect-ratio: 4/3; cursor: pointer; background: var(--surface);
+    transition: transform var(--transition);
+  }
+  .project-card img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.7s ease;
+  }
+  .project-card:hover img { transform: scale(1.1); }
+  .project-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,0.92) 100%);
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 24px;
+    opacity: 0; transition: opacity var(--transition);
+  }
+  .project-card:hover .project-overlay { opacity: 1; }
+  .project-overlay h4 { color: #fff; font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+  .project-overlay span { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .project-card.hide { display: none; }
+
+  .lightbox {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 2000;
+    display: none; align-items: center; justify-content: center; padding: 30px;
+  }
+  .lightbox.open { display: flex; animation: fadeIn 0.3s; }
+  .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 14px; box-shadow: var(--shadow-lg); }
+  .lightbox-close {
+    position: absolute; top: 20px; inset-inline-end: 20px;
+    width: 50px; height: 50px; border-radius: 50%;
+    background: rgba(255,255,255,0.1); color: #fff; font-size: 22px;
+    display: grid; place-items: center;
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .why-card {
+    text-align: center; padding: 36px 22px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); transition: all var(--transition);
+  }
+  .why-card:hover { transform: translateY(-6px); border-color: var(--accent); }
+  .why-icon {
+    width: 80px; height: 80px; margin: 0 auto 22px;
+    border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #0a0a0a; display: grid; place-items: center; font-size: 32px;
+    box-shadow: 0 10px 30px rgba(255,215,0,0.25);
+  }
+  .why-card h4 { font-size: 19px; font-weight: 800; margin-bottom: 10px; }
+  .why-card p { color: var(--text-soft); font-size: 14px; }
+
+  .testimonials { background: var(--bg-2); overflow: hidden; }
+  .testimonial-track {
+    display: flex; transition: transform 0.7s cubic-bezier(.2,.7,.2,1);
+  }
+  .testimonial-slide { flex: 0 0 100%; padding-inline: 20px; }
+  .testimonial-card {
+    max-width: 800px; margin: 0 auto;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: clamp(30px, 4vw, 50px);
+    text-align: center; position: relative;
+  }
+  .testimonial-card::before {
+    content: '"'; position: absolute; top: 10px; inset-inline-start: 30px;
+    font-size: 100px; color: var(--accent); opacity: 0.2; font-family: serif; line-height: 1;
+  }
+  .testimonial-stars { color: var(--accent); font-size: 18px; margin-bottom: 18px; }
+  .testimonial-text { font-size: clamp(16px, 2vw, 19px); color: var(--text); margin-bottom: 22px; font-weight: 500; }
+  .testimonial-author { font-weight: 800; font-size: 17px; }
+  .testimonial-role { color: var(--text-muted); font-size: 14px; margin-top: 4px; }
+  .testimonial-dots { display: flex; justify-content: center; gap: 10px; margin-top: 30px; }
+  .testimonial-dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--border-strong); transition: all var(--transition); cursor: pointer;
+  }
+  .testimonial-dot.active { background: var(--accent); width: 36px; border-radius: 6px; }
+
+  .cta-hero {
+    position: relative; overflow: hidden;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+    color: #0a0a0a; text-align: center;
+  }
+  .cta-hero::before {
+    content: ''; position: absolute; inset: 0; opacity: 0.15;
+    background-image: radial-gradient(circle, #000 1px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+  .cta-hero::after {
+    content: ''; position: absolute; top: -50%; inset-inline-start: -10%;
+    width: 60%; height: 200%; background: rgba(255,255,255,0.08);
+    transform: rotate(20deg);
+  }
+  .cta-content { position: relative; z-index: 2; padding-block: clamp(70px, 10vw, 110px); }
+  .cta-content h2 {
+    font-size: clamp(32px, 5.5vw, 58px); font-weight: 900;
+    line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px;
+  }
+  .cta-content p {
+    font-size: clamp(16px, 2vw, 20px); margin-bottom: 36px;
+    max-width: 640px; margin-inline: auto;
+    color: rgba(0,0,0,0.78); font-weight: 500;
+  }
+  .cta-content .btn-whatsapp {
+    font-size: 18px; padding: 18px 40px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.25);
+  }
+  .cta-content .btn-whatsapp i { font-size: 24px; }
+
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 13px; font-weight: 700; color: var(--text-soft); }
+  .form-control {
+    padding: 14px 18px; border-radius: 12px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text); font: inherit; transition: all var(--transition);
+  }
+  .form-control:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  textarea.form-control { resize: vertical; min-height: 130px; }
+
+  .contact-info-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 32px;
+  }
+  .contact-info-list { display: flex; flex-direction: column; gap: 20px; margin-bottom: 26px; }
+  .contact-info-item { display: flex; gap: 16px; align-items: flex-start; }
+  .contact-info-icon {
+    flex: 0 0 46px; height: 46px; border-radius: 12px;
+    background: var(--accent-soft); color: var(--accent);
+    display: grid; place-items: center; font-size: 18px;
+  }
+  .contact-info-item h5 { font-weight: 800; font-size: 15px; margin-bottom: 3px; }
+  .contact-info-item p, .contact-info-item a { color: var(--text-soft); font-size: 14px; }
+  .contact-info-item a:hover { color: var(--accent); }
+  .map-wrap {
+    border-radius: var(--radius-lg); overflow: hidden;
+    border: 1px solid var(--border); height: 260px;
+  }
+  .map-wrap iframe { width: 100%; height: 100%; border: 0; }
+  [data-theme="dark"] .map-wrap iframe { filter: invert(0.9) hue-rotate(180deg) brightness(0.85) contrast(1.1); }
+
+  .footer { background: #060606; color: #d6d6d6; padding-block: 70px 0; border-top: 1px solid rgba(255,255,255,0.08); }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px;
+    padding-bottom: 50px;
+  }
+  .footer h5 {
+    color: #fff; font-weight: 800; font-size: 16px; margin-bottom: 20px;
+    position: relative; padding-bottom: 12px;
+  }
+  .footer h5::after {
+    content: ''; position: absolute; bottom: 0; inset-inline-start: 0;
+    width: 36px; height: 3px; background: var(--accent); border-radius: 2px;
+  }
+  .footer p, .footer a { color: rgba(255,255,255,0.65); font-size: 14px; }
+  .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+  .footer-col a:hover { color: var(--accent); }
+  .footer-brand p { margin-top: 14px; }
+  .footer-social { display: flex; gap: 10px; margin-top: 20px; }
+  .footer-social a {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(255,255,255,0.07); display: grid; place-items: center;
+    color: #fff; font-size: 16px; transition: all var(--transition);
+  }
+  .footer-social a:hover { background: var(--accent); color: #0a0a0a; transform: translateY(-4px); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-block: 22px; text-align: center; font-size: 13px;
+    color: rgba(255,255,255,0.5);
+  }
+  .footer-bottom span.accent { color: var(--accent); }
+
+  .float-wa {
+    position: fixed; bottom: 28px; inset-inline-end: 28px;
+    width: 62px; height: 62px; border-radius: 50%;
+    background: var(--whatsapp); color: #fff;
+    display: grid; place-items: center; font-size: 30px;
+    box-shadow: 0 12px 30px rgba(37,211,102,0.45);
+    z-index: 999; transition: transform var(--transition);
+  }
+  .float-wa:hover { transform: scale(1.1); background: var(--whatsapp-dark); }
+  .float-wa::before, .float-wa::after {
+    content: ''; position: absolute; inset: 0; border-radius: 50%;
+    background: var(--whatsapp); z-index: -1; opacity: 0.55;
+    animation: pulse 2s infinite;
+  }
+  .float-wa::after { animation-delay: 1s; }
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.55; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+  .float-wa-tooltip {
+    position: absolute; bottom: 50%; transform: translateY(50%);
+    inset-inline-end: calc(100% + 14px);
+    background: #0a0a0a; color: #fff; padding: 10px 16px; border-radius: 10px;
+    font-size: 13px; font-weight: 600; white-space: nowrap;
+    opacity: 0; pointer-events: none; transition: opacity var(--transition);
+    box-shadow: var(--shadow-md);
+  }
+  .float-wa:hover .float-wa-tooltip { opacity: 1; }
+
+  .reveal { transition: opacity 0.8s ease, transform 0.8s ease; }
+  .js .reveal:not(.visible) { opacity: 0; transform: translateY(40px); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  @media (max-width: 1024px) {
+    .services-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .about-image img { aspect-ratio: 16/10; }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: grid; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .hero-ctas { flex-direction: column; align-items: stretch; }
+    .hero-ctas .btn { width: 100%; }
+    .form-row { grid-template-columns: 1fr; }
+    .nav-actions .lang-btn .lang-label { display: none; }
+  }
+
+  @media (max-width: 480px) {
+    .services-grid, .why-grid, .projects-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .about-features { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .float-wa { width: 56px; height: 56px; font-size: 26px; bottom: 20px; inset-inline-end: 20px; }
+    .section { padding-block: 60px; }
+    .logo-text small { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-helmet-safety"></i></span>
+        <span class="logo-text">
+          <span data-i18n="brandShort">مقاولات المدينة</span>
+          <small data-i18n="brandTag">EST. CONTRACTING</small>
+        </span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link" data-i18n="navHome">الرئيسية</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="navAbout">من نحن</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="navServices">خدماتنا</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="navProjects">المشاريع</a></li>
+        <li><a href="#why" class="nav-link" data-i18n="navWhy">لماذا نحن</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="navContact">تواصل</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn lang-btn" id="langToggle" aria-label="Switch language">
+          <span class="lang-flag">🇬🇧</span>
+          <span class="lang-label">EN</span>
+        </button>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer">
+  <button class="icon-btn drawer-close" id="drawerClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#home" class="nav-link" data-i18n="navHome">الرئيسية</a>
+  <a href="#about" class="nav-link" data-i18n="navAbout">من نحن</a>
+  <a href="#services" class="nav-link" data-i18n="navServices">خدماتنا</a>
+  <a href="#projects" class="nav-link" data-i18n="navProjects">المشاريع</a>
+  <a href="#why" class="nav-link" data-i18n="navWhy">لماذا نحن</a>
+  <a href="#contact" class="nav-link" data-i18n="navContact">تواصل</a>
+</aside>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg" id="heroBg">
+    <img src="https://picsum.photos/seed/construction-hero/1920/1080" alt="" loading="eager" onerror="this.style.display='none'" />
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-eyebrow" data-i18n="heroEyebrow">مؤسسة سعودية موثوقة</span>
+      <h1>
+        <span data-i18n="heroTitleA">نبني أحلامكم</span>
+        <br />
+        <span data-i18n="heroTitleB" style="color: var(--accent)">على أرض الواقع</span>
+      </h1>
+      <p data-i18n="heroDesc">خبرة تمتد لسنوات في عالم المقاولات والبناء — جودة لا تساوم، إتقان لا يُضاهى.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-file-invoice"></i>
+          <span data-i18n="ctaQuote">احصل على عرض سعر</span>
+        </a>
+        <a href="#about" class="btn btn-outline" data-i18n="ctaAbout">تعرف علينا</a>
+      </div>
+    </div>
+  </div>
+  <a href="#stats" class="scroll-indicator" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat reveal">
+        <div class="stat-num"><span class="counter" data-target="250">0</span><small>+</small></div>
+        <div class="stat-label" data-i18n="statProjects">مشروع منجز</div>
+      </div>
+      <div class="stat reveal reveal-delay-1">
+        <div class="stat-num"><span class="counter" data-target="15">0</span><small>+</small></div>
+        <div class="stat-label" data-i18n="statYears">سنة خبرة</div>
+      </div>
+      <div class="stat reveal reveal-delay-2">
+        <div class="stat-num"><span class="counter" data-target="180">0</span><small>+</small></div>
+        <div class="stat-label" data-i18n="statClients">عميل سعيد</div>
+      </div>
+      <div class="stat reveal reveal-delay-3">
+        <div class="stat-num"><span class="counter" data-target="50">0</span><small>+</small></div>
+        <div class="stat-label" data-i18n="statEngineers">مهندس ومستشار</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=900" alt="Engineer reviewing blueprints" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/engineer/900/1100';" />
+        <div class="badge">
+          <div>
+            <div style="font-size: 30px;">15+</div>
+            <div style="font-size: 11px; margin-top: 4px;" data-i18n="badgeYears">سنة من الخبرة</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <span class="section-label" data-i18n="aboutLabel">من نحن</span>
+        <h2>
+          <span data-i18n="aboutTitleA">شركاؤكم في</span>
+          <span style="color: var(--accent);" data-i18n="aboutTitleB"> بناء المستقبل</span>
+        </h2>
+        <p data-i18n="aboutP1">تأسست مؤسسة مقاولات المدينة لتكون شريككم الموثوق في تحويل الرؤى الهندسية إلى واقع ملموس. نمزج بين الخبرة العريقة والتقنيات الحديثة لنقدم لكم مشاريع تتحدى الزمن.</p>
+        <p data-i18n="aboutP2">من قلب المدينة المنورة، نخدم عملاءنا في جميع أنحاء المملكة العربية السعودية بالتزام راسخ بالجودة، والشفافية، والتسليم في الموعد المحدد.</p>
+        <div class="about-features">
+          <div class="about-feature"><i class="fa-solid fa-circle-check"></i><span data-i18n="aboutF1">ترخيص رسمي معتمد</span></div>
+          <div class="about-feature"><i class="fa-solid fa-circle-check"></i><span data-i18n="aboutF2">فريق هندسي محترف</span></div>
+          <div class="about-feature"><i class="fa-solid fa-circle-check"></i><span data-i18n="aboutF3">مواد عالية الجودة</span></div>
+          <div class="about-feature"><i class="fa-solid fa-circle-check"></i><span data-i18n="aboutF4">ضمان شامل</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" style="background: var(--bg-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="servicesLabel">خدماتنا</span>
+      <h2 class="section-title" data-i18n="servicesTitle">حلول هندسية شاملة</h2>
+      <p class="section-subtitle" data-i18n="servicesDesc">من الفكرة الأولى إلى التسليم النهائي، نقدم لكم خدمات متكاملة بأعلى معايير الجودة.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+        <h3 data-i18n="svc1Title">المقاولات العامة</h3>
+        <p data-i18n="svc1Desc">إدارة وتنفيذ جميع أنواع مشاريع المقاولات السكنية والتجارية بأعلى المعايير.</p>
+        <a href="#contact" class="service-link"><span data-i18n="readMore">اعرف المزيد</span> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+        <h3 data-i18n="svc2Title">البناء والإنشاء</h3>
+        <p data-i18n="svc2Desc">بناء فلل، مباني سكنية، ومنشآت تجارية بهياكل قوية وتصاميم عصرية.</p>
+        <a href="#contact" class="service-link"><span data-i18n="readMore">اعرف المزيد</span> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-paint-roller"></i></div>
+        <h3 data-i18n="svc3Title">التشطيبات الفاخرة</h3>
+        <p data-i18n="svc3Desc">تشطيبات داخلية وخارجية بأرقى المواد ولمسات احترافية تعكس ذوقكم الرفيع.</p>
+        <a href="#contact" class="service-link"><span data-i18n="readMore">اعرف المزيد</span> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3 data-i18n="svc4Title">الترميم والصيانة</h3>
+        <p data-i18n="svc4Desc">تجديد وترميم المباني القديمة، وأعمال الصيانة الشاملة الدورية والوقائية.</p>
+        <a href="#contact" class="service-link"><span data-i18n="readMore">اعرف المزيد</span> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+        <h3 data-i18n="svc5Title">التصميم المعماري</h3>
+        <p data-i18n="svc5Desc">تصاميم معمارية مبتكرة تجمع بين الجمال والوظيفية، مع مخططات هندسية دقيقة.</p>
+        <a href="#contact" class="service-link"><span data-i18n="readMore">اعرف المزيد</span> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+        <h3 data-i18n="svc6Title">إدارة المشاريع</h3>
+        <p data-i18n="svc6Desc">إشراف هندسي كامل ومتابعة دقيقة لكل مرحلة من مراحل المشروع حتى التسليم.</p>
+        <a href="#contact" class="service-link"><span data-i18n="readMore">اعرف المزيد</span> <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="projectsLabel">أعمالنا</span>
+      <h2 class="section-title" data-i18n="projectsTitle">معرض المشاريع</h2>
+      <p class="section-subtitle" data-i18n="projectsDesc">نخبة من مشاريعنا المنجزة التي تعكس مستوى الجودة والإتقان.</p>
+    </div>
+
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all" data-i18n="filterAll">الكل</button>
+      <button class="filter-btn" data-filter="residential" data-i18n="filterRes">سكني</button>
+      <button class="filter-btn" data-filter="commercial" data-i18n="filterCom">تجاري</button>
+      <button class="filter-btn" data-filter="renovation" data-i18n="filterRen">ترميم</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal" data-category="residential">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Modern villa" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/villa1/800/600';" />
+        <div class="project-overlay">
+          <span data-i18n="filterRes">سكني</span>
+          <h4 data-i18n="proj1">فيلا الرياض الفاخرة</h4>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1" data-category="commercial">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Commercial tower" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/tower/800/600';" />
+        <div class="project-overlay">
+          <span data-i18n="filterCom">تجاري</span>
+          <h4 data-i18n="proj2">برج الأعمال التجاري</h4>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2" data-category="renovation">
+        <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=800" alt="Renovation" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/renovation1/800/600';" />
+        <div class="project-overlay">
+          <span data-i18n="filterRen">ترميم</span>
+          <h4 data-i18n="proj3">ترميم بيت تراثي</h4>
+        </div>
+      </div>
+      <div class="project-card reveal" data-category="residential">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" alt="Luxury home" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/villa2/800/600';" />
+        <div class="project-overlay">
+          <span data-i18n="filterRes">سكني</span>
+          <h4 data-i18n="proj4">مجمع سكني عصري</h4>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1" data-category="commercial">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="Mall" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/mall/800/600';" />
+        <div class="project-overlay">
+          <span data-i18n="filterCom">تجاري</span>
+          <h4 data-i18n="proj5">مركز تسوق المدينة</h4>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2" data-category="renovation">
+        <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800" alt="Office renovation" loading="lazy" onerror="this.onerror=null;this.src='https://picsum.photos/seed/office/800/600';" />
+        <div class="project-overlay">
+          <span data-i18n="filterRen">ترميم</span>
+          <h4 data-i18n="proj6">تجديد مكاتب إدارية</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="whyLabel">لماذا نحن</span>
+      <h2 class="section-title" data-i18n="whyTitle">أسباب تجعلنا الخيار الأول</h2>
+      <p class="section-subtitle" data-i18n="whyDesc">نتميز بمجموعة من القيم والمبادئ التي تجعلنا الشريك الأمثل لمشروعكم.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+        <h4 data-i18n="why1Title">جودة معتمدة</h4>
+        <p data-i18n="why1Desc">شهادات جودة عالمية ومعايير عمل صارمة في كل مشروع.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-icon"><i class="fa-solid fa-clock"></i></div>
+        <h4 data-i18n="why2Title">تسليم في الموعد</h4>
+        <p data-i18n="why2Desc">التزامنا بالمواعيد يعكس احترامنا لوقتكم وثقتكم بنا.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-icon"><i class="fa-solid fa-users-gear"></i></div>
+        <h4 data-i18n="why3Title">فريق محترف</h4>
+        <p data-i18n="why3Desc">مهندسون وفنيون ذوو خبرة تتجاوز 15 عامًا في الميدان.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-icon"><i class="fa-solid fa-tags"></i></div>
+        <h4 data-i18n="why4Title">أسعار تنافسية</h4>
+        <p data-i18n="why4Desc">أسعار عادلة وشفافة دون أي تنازل عن الجودة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="testLabel">آراء العملاء</span>
+      <h2 class="section-title" data-i18n="testTitle">ماذا يقول عملاؤنا</h2>
+    </div>
+    <div class="testimonial-track" id="testimonialTrack">
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-text" data-i18n="test1Text">تعاملت مع مؤسسة مقاولات المدينة في بناء فيلتي، والنتيجة فاقت توقعاتي بكثير. التزام بالموعد، جودة في التنفيذ، وشفافية تامة في التعامل.</p>
+          <div class="testimonial-author" data-i18n="test1Name">أ. عبدالله الحربي</div>
+          <div class="testimonial-role" data-i18n="test1Role">مشروع فيلا سكنية — المدينة المنورة</div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-text" data-i18n="test2Text">فريق متمكن ومحترف. أنجزوا مشروع المكتب التجاري بإتقان رائع وضمن الميزانية المخصصة. أنصح بالتعامل معهم بكل ثقة.</p>
+          <div class="testimonial-author" data-i18n="test2Name">م. سارة العنزي</div>
+          <div class="testimonial-role" data-i18n="test2Role">مشروع مكاتب تجارية — الرياض</div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p class="testimonial-text" data-i18n="test3Text">قاموا بترميم منزل العائلة بعناية فائقة. حافظوا على الطابع التراثي مع إضافة لمسات عصرية. خدمة استثنائية حقاً.</p>
+          <div class="testimonial-author" data-i18n="test3Name">د. خالد القحطاني</div>
+          <div class="testimonial-role" data-i18n="test3Role">مشروع ترميم — جدة</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots">
+      <span class="testimonial-dot active" data-slide="0"></span>
+      <span class="testimonial-dot" data-slide="1"></span>
+      <span class="testimonial-dot" data-slide="2"></span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA HERO -->
+<section class="cta-hero">
+  <div class="container cta-content">
+    <h2 data-i18n="ctaHeroTitle">تريد مثله؟ تواصل معنا الآن</h2>
+    <p data-i18n="ctaHeroDesc">احصل على استشارة مجانية وعرض سعر مخصص لمشروعك خلال 24 ساعة. نحن في انتظار تواصلكم.</p>
+    <a href="https://wa.me/966599804296?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20خدماتكم" target="_blank" rel="noopener" class="btn btn-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span data-i18n="ctaWhatsapp">تواصل عبر واتساب</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="contactLabel">تواصل معنا</span>
+      <h2 class="section-title" data-i18n="contactTitle">ابدأ مشروعك اليوم</h2>
+      <p class="section-subtitle" data-i18n="contactDesc">املأ النموذج وسنعاود التواصل معك خلال 24 ساعة، أو راسلنا مباشرة عبر واتساب.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm" onsubmit="return submitForm(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="formName">الاسم الكامل</label>
+            <input type="text" class="form-control" id="fName" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="formPhone">رقم الجوال</label>
+            <input type="tel" class="form-control" id="fPhone" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="formService">نوع الخدمة</label>
+          <select class="form-control" id="fService" required>
+            <option value="" data-i18n="formSelect">اختر الخدمة...</option>
+            <option data-i18n="svc1Title">المقاولات العامة</option>
+            <option data-i18n="svc2Title">البناء والإنشاء</option>
+            <option data-i18n="svc3Title">التشطيبات الفاخرة</option>
+            <option data-i18n="svc4Title">الترميم والصيانة</option>
+            <option data-i18n="svc5Title">التصميم المعماري</option>
+            <option data-i18n="svc6Title">إدارة المشاريع</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="formMsg">رسالتك</label>
+          <textarea class="form-control" id="fMsg" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="formSend">إرسال عبر واتساب</span>
+        </button>
+      </form>
+
+      <div class="reveal reveal-delay-1">
+        <div class="contact-info-card">
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h5 data-i18n="infoAddrTitle">العنوان</h5>
+                <p data-i18n="infoAddr">المدينة المنورة، المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h5 data-i18n="infoPhoneTitle">الهاتف</h5>
+                <a href="tel:+966599804296" dir="ltr">+966 59 980 4296</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h5 data-i18n="infoMailTitle">البريد الإلكتروني</h5>
+                <a href="mailto:info@madinah-contracting.sa">info@madinah-contracting.sa</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h5 data-i18n="infoHoursTitle">ساعات العمل</h5>
+                <p data-i18n="infoHours">السبت - الخميس: 8 صباحاً - 8 مساءً</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <iframe src="https://maps.google.com/maps?q=Madinah,Saudi%20Arabia&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Madinah Map"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand footer-col">
+        <h5 data-i18n="footAboutTitle">عن المؤسسة</h5>
+        <p data-i18n="footAbout">مؤسسة مقاولات المدينة — شريككم الموثوق في عالم المقاولات والبناء والتشطيبات بجودة عالمية ولمسة سعودية.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footLinks">روابط سريعة</h5>
+        <ul>
+          <li><a href="#home" data-i18n="navHome">الرئيسية</a></li>
+          <li><a href="#about" data-i18n="navAbout">من نحن</a></li>
+          <li><a href="#projects" data-i18n="navProjects">المشاريع</a></li>
+          <li><a href="#contact" data-i18n="navContact">تواصل</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footServices">خدماتنا</h5>
+        <ul>
+          <li><a href="#services" data-i18n="svc1Title">المقاولات العامة</a></li>
+          <li><a href="#services" data-i18n="svc2Title">البناء والإنشاء</a></li>
+          <li><a href="#services" data-i18n="svc3Title">التشطيبات الفاخرة</a></li>
+          <li><a href="#services" data-i18n="svc5Title">التصميم المعماري</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 data-i18n="footContact">تواصل معنا</h5>
+        <ul>
+          <li><i class="fa-solid fa-location-dot" style="color:var(--accent); margin-inline-end: 8px;"></i><span data-i18n="infoAddr">المدينة المنورة، السعودية</span></li>
+          <li><i class="fa-solid fa-phone" style="color:var(--accent); margin-inline-end: 8px;"></i><a href="tel:+966599804296" dir="ltr">+966 59 980 4296</a></li>
+          <li><i class="fa-solid fa-envelope" style="color:var(--accent); margin-inline-end: 8px;"></i><a href="mailto:info@madinah-contracting.sa">info@madinah-contracting.sa</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="accent">©</span> 2025 <span data-i18n="brand">مؤسسة مقاولات المدينة</span> — <span data-i18n="footRights">جميع الحقوق محفوظة</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/966599804296?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20خدماتكم"
+   target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="float-wa-tooltip" data-i18n="waTooltip">تواصل معنا الآن</span>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" alt="" id="lightboxImg" />
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+
+// Safety net: ensure reveal elements become visible even if IntersectionObserver fails
+function showAllReveal() {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => setTimeout(showAllReveal, 800));
+} else {
+  setTimeout(showAllReveal, 800);
+}
+
+const translations = {
+  ar: {
+    brand: "مؤسسة مقاولات المدينة",
+    brandShort: "مقاولات المدينة",
+    brandTag: "EST. CONTRACTING",
+    navHome: "الرئيسية", navAbout: "من نحن", navServices: "خدماتنا",
+    navProjects: "المشاريع", navWhy: "لماذا نحن", navContact: "تواصل",
+    heroEyebrow: "مؤسسة سعودية موثوقة",
+    heroTitleA: "نبني أحلامكم",
+    heroTitleB: "على أرض الواقع",
+    heroDesc: "خبرة تمتد لسنوات في عالم المقاولات والبناء — جودة لا تساوم، إتقان لا يُضاهى.",
+    ctaQuote: "احصل على عرض سعر", ctaAbout: "تعرف علينا",
+    statProjects: "مشروع منجز", statYears: "سنة خبرة",
+    statClients: "عميل سعيد", statEngineers: "مهندس ومستشار",
+    aboutLabel: "من نحن",
+    aboutTitleA: "شركاؤكم في", aboutTitleB: " بناء المستقبل",
+    aboutP1: "تأسست مؤسسة مقاولات المدينة لتكون شريككم الموثوق في تحويل الرؤى الهندسية إلى واقع ملموس. نمزج بين الخبرة العريقة والتقنيات الحديثة لنقدم لكم مشاريع تتحدى الزمن.",
+    aboutP2: "من قلب المدينة المنورة، نخدم عملاءنا في جميع أنحاء المملكة العربية السعودية بالتزام راسخ بالجودة، والشفافية، والتسليم في الموعد المحدد.",
+    aboutF1: "ترخيص رسمي معتمد", aboutF2: "فريق هندسي محترف",
+    aboutF3: "مواد عالية الجودة", aboutF4: "ضمان شامل",
+    badgeYears: "سنة من الخبرة",
+    servicesLabel: "خدماتنا", servicesTitle: "حلول هندسية شاملة",
+    servicesDesc: "من الفكرة الأولى إلى التسليم النهائي، نقدم لكم خدمات متكاملة بأعلى معايير الجودة.",
+    svc1Title: "المقاولات العامة", svc1Desc: "إدارة وتنفيذ جميع أنواع مشاريع المقاولات السكنية والتجارية بأعلى المعايير.",
+    svc2Title: "البناء والإنشاء", svc2Desc: "بناء فلل، مباني سكنية، ومنشآت تجارية بهياكل قوية وتصاميم عصرية.",
+    svc3Title: "التشطيبات الفاخرة", svc3Desc: "تشطيبات داخلية وخارجية بأرقى المواد ولمسات احترافية تعكس ذوقكم الرفيع.",
+    svc4Title: "الترميم والصيانة", svc4Desc: "تجديد وترميم المباني القديمة، وأعمال الصيانة الشاملة الدورية والوقائية.",
+    svc5Title: "التصميم المعماري", svc5Desc: "تصاميم معمارية مبتكرة تجمع بين الجمال والوظيفية، مع مخططات هندسية دقيقة.",
+    svc6Title: "إدارة المشاريع", svc6Desc: "إشراف هندسي كامل ومتابعة دقيقة لكل مرحلة من مراحل المشروع حتى التسليم.",
+    readMore: "اعرف المزيد",
+    projectsLabel: "أعمالنا", projectsTitle: "معرض المشاريع",
+    projectsDesc: "نخبة من مشاريعنا المنجزة التي تعكس مستوى الجودة والإتقان.",
+    filterAll: "الكل", filterRes: "سكني", filterCom: "تجاري", filterRen: "ترميم",
+    proj1: "فيلا الرياض الفاخرة", proj2: "برج الأعمال التجاري",
+    proj3: "ترميم بيت تراثي", proj4: "مجمع سكني عصري",
+    proj5: "مركز تسوق المدينة", proj6: "تجديد مكاتب إدارية",
+    whyLabel: "لماذا نحن", whyTitle: "أسباب تجعلنا الخيار الأول",
+    whyDesc: "نتميز بمجموعة من القيم والمبادئ التي تجعلنا الشريك الأمثل لمشروعكم.",
+    why1Title: "جودة معتمدة", why1Desc: "شهادات جودة عالمية ومعايير عمل صارمة في كل مشروع.",
+    why2Title: "تسليم في الموعد", why2Desc: "التزامنا بالمواعيد يعكس احترامنا لوقتكم وثقتكم بنا.",
+    why3Title: "فريق محترف", why3Desc: "مهندسون وفنيون ذوو خبرة تتجاوز 15 عامًا في الميدان.",
+    why4Title: "أسعار تنافسية", why4Desc: "أسعار عادلة وشفافة دون أي تنازل عن الجودة.",
+    testLabel: "آراء العملاء", testTitle: "ماذا يقول عملاؤنا",
+    test1Text: "تعاملت مع مؤسسة مقاولات المدينة في بناء فيلتي، والنتيجة فاقت توقعاتي بكثير. التزام بالموعد، جودة في التنفيذ، وشفافية تامة في التعامل.",
+    test1Name: "أ. عبدالله الحربي", test1Role: "مشروع فيلا سكنية — المدينة المنورة",
+    test2Text: "فريق متمكن ومحترف. أنجزوا مشروع المكتب التجاري بإتقان رائع وضمن الميزانية المخصصة. أنصح بالتعامل معهم بكل ثقة.",
+    test2Name: "م. سارة العنزي", test2Role: "مشروع مكاتب تجارية — الرياض",
+    test3Text: "قاموا بترميم منزل العائلة بعناية فائقة. حافظوا على الطابع التراثي مع إضافة لمسات عصرية. خدمة استثنائية حقاً.",
+    test3Name: "د. خالد القحطاني", test3Role: "مشروع ترميم — جدة",
+    ctaHeroTitle: "تريد مثله؟ تواصل معنا الآن",
+    ctaHeroDesc: "احصل على استشارة مجانية وعرض سعر مخصص لمشروعك خلال 24 ساعة. نحن في انتظار تواصلكم.",
+    ctaWhatsapp: "تواصل عبر واتساب",
+    contactLabel: "تواصل معنا", contactTitle: "ابدأ مشروعك اليوم",
+    contactDesc: "املأ النموذج وسنعاود التواصل معك خلال 24 ساعة، أو راسلنا مباشرة عبر واتساب.",
+    formName: "الاسم الكامل", formPhone: "رقم الجوال",
+    formService: "نوع الخدمة", formSelect: "اختر الخدمة...",
+    formMsg: "رسالتك", formSend: "إرسال عبر واتساب",
+    infoAddrTitle: "العنوان", infoAddr: "المدينة المنورة، المملكة العربية السعودية",
+    infoPhoneTitle: "الهاتف", infoMailTitle: "البريد الإلكتروني",
+    infoHoursTitle: "ساعات العمل", infoHours: "السبت - الخميس: 8 صباحاً - 8 مساءً",
+    footAboutTitle: "عن المؤسسة",
+    footAbout: "مؤسسة مقاولات المدينة — شريككم الموثوق في عالم المقاولات والبناء والتشطيبات بجودة عالمية ولمسة سعودية.",
+    footLinks: "روابط سريعة", footServices: "خدماتنا", footContact: "تواصل معنا",
+    footRights: "جميع الحقوق محفوظة",
+    waTooltip: "تواصل معنا الآن"
+  },
+  en: {
+    brand: "Madinah Contracting Establishment",
+    brandShort: "Madinah Contracting",
+    brandTag: "EST. CONTRACTING",
+    navHome: "Home", navAbout: "About", navServices: "Services",
+    navProjects: "Projects", navWhy: "Why Us", navContact: "Contact",
+    heroEyebrow: "Trusted Saudi Establishment",
+    heroTitleA: "We Build Your Dreams",
+    heroTitleB: "On Solid Ground",
+    heroDesc: "Years of expertise in construction and contracting — uncompromised quality, unmatched craftsmanship.",
+    ctaQuote: "Get a Quote", ctaAbout: "Learn More",
+    statProjects: "Projects Completed", statYears: "Years of Experience",
+    statClients: "Happy Clients", statEngineers: "Engineers & Consultants",
+    aboutLabel: "About Us",
+    aboutTitleA: "Your Partners in", aboutTitleB: " Building the Future",
+    aboutP1: "Madinah Contracting was founded to be your trusted partner in turning engineering visions into tangible reality. We blend deep-rooted expertise with modern technology to deliver projects that stand the test of time.",
+    aboutP2: "From the heart of Madinah, we serve clients across the Kingdom of Saudi Arabia with unwavering commitment to quality, transparency, and on-time delivery.",
+    aboutF1: "Officially Licensed", aboutF2: "Professional Engineers",
+    aboutF3: "Premium Materials", aboutF4: "Comprehensive Warranty",
+    badgeYears: "Years of Experience",
+    servicesLabel: "Our Services", servicesTitle: "Comprehensive Engineering Solutions",
+    servicesDesc: "From first concept to final delivery — integrated services at the highest quality standards.",
+    svc1Title: "General Contracting", svc1Desc: "Managing and executing all types of residential and commercial contracting projects to the highest standards.",
+    svc2Title: "Construction & Building", svc2Desc: "Building villas, residential buildings, and commercial structures with strong frameworks and modern designs.",
+    svc3Title: "Luxury Finishing", svc3Desc: "Interior and exterior finishing with the finest materials and professional touches reflecting your refined taste.",
+    svc4Title: "Renovation & Maintenance", svc4Desc: "Renovating old buildings, with comprehensive periodic and preventive maintenance services.",
+    svc5Title: "Architectural Design", svc5Desc: "Innovative architectural designs combining beauty and function, with precise engineering blueprints.",
+    svc6Title: "Project Management", svc6Desc: "Full engineering supervision and precise follow-up at every stage of the project through to delivery.",
+    readMore: "Learn More",
+    projectsLabel: "Our Work", projectsTitle: "Project Gallery",
+    projectsDesc: "A selection of our completed projects reflecting our level of quality and craftsmanship.",
+    filterAll: "All", filterRes: "Residential", filterCom: "Commercial", filterRen: "Renovation",
+    proj1: "Luxury Riyadh Villa", proj2: "Commercial Business Tower",
+    proj3: "Heritage House Restoration", proj4: "Modern Residential Complex",
+    proj5: "Madinah Shopping Center", proj6: "Office Renovation",
+    whyLabel: "Why Us", whyTitle: "Reasons We're Your First Choice",
+    whyDesc: "We stand out through a set of values and principles that make us the ideal partner for your project.",
+    why1Title: "Certified Quality", why1Desc: "International quality certifications and strict work standards on every project.",
+    why2Title: "On-Time Delivery", why2Desc: "Our commitment to deadlines reflects our respect for your time and trust.",
+    why3Title: "Professional Team", why3Desc: "Engineers and technicians with more than 15 years of field experience.",
+    why4Title: "Competitive Pricing", why4Desc: "Fair, transparent prices without any compromise on quality.",
+    testLabel: "Testimonials", testTitle: "What Our Clients Say",
+    test1Text: "I worked with Madinah Contracting to build my villa, and the result far exceeded my expectations. Punctuality, quality execution, and full transparency throughout.",
+    test1Name: "Mr. Abdullah Al-Harbi", test1Role: "Residential Villa Project — Madinah",
+    test2Text: "A capable, professional team. They completed our commercial office project with wonderful precision and within the allocated budget. I recommend them with full confidence.",
+    test2Name: "Eng. Sarah Al-Anazi", test2Role: "Commercial Offices — Riyadh",
+    test3Text: "They restored our family home with great care. They preserved the heritage character while adding modern touches. Truly exceptional service.",
+    test3Name: "Dr. Khalid Al-Qahtani", test3Role: "Restoration Project — Jeddah",
+    ctaHeroTitle: "Want Something Like This? Contact Us Now",
+    ctaHeroDesc: "Get a free consultation and a custom quote for your project within 24 hours. We're waiting to hear from you.",
+    ctaWhatsapp: "Contact via WhatsApp",
+    contactLabel: "Contact Us", contactTitle: "Start Your Project Today",
+    contactDesc: "Fill out the form and we'll get back to you within 24 hours, or message us directly via WhatsApp.",
+    formName: "Full Name", formPhone: "Phone Number",
+    formService: "Service Type", formSelect: "Select a service...",
+    formMsg: "Your Message", formSend: "Send via WhatsApp",
+    infoAddrTitle: "Address", infoAddr: "Madinah, Kingdom of Saudi Arabia",
+    infoPhoneTitle: "Phone", infoMailTitle: "Email",
+    infoHoursTitle: "Working Hours", infoHours: "Sat - Thu: 8 AM - 8 PM",
+    footAboutTitle: "About the Establishment",
+    footAbout: "Madinah Contracting — your trusted partner in construction, building, and finishing with world-class quality and a Saudi touch.",
+    footLinks: "Quick Links", footServices: "Our Services", footContact: "Contact",
+    footRights: "All Rights Reserved.",
+    waTooltip: "Chat with us"
+  }
+};
+
+const htmlEl = document.documentElement;
+const langToggle = document.getElementById('langToggle');
+
+// Testimonial carousel state — defined BEFORE applyLang so it can sync slide direction on lang change
+const track = document.getElementById('testimonialTrack');
+const dots = document.querySelectorAll('.testimonial-dot');
+let currentSlide = 0;
+const totalSlides = dots.length;
+
+function goToSlide(idx) {
+  if (!track) return;
+  currentSlide = idx;
+  const isRTL = htmlEl.dir === 'rtl';
+  track.style.transform = `translateX(${isRTL ? idx * 100 : -idx * 100}%)`;
+  dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+}
+
+function applyLang(lang) {
+  const dict = translations[lang];
+  htmlEl.lang = lang;
+  htmlEl.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = dict[key];
+      } else {
+        el.textContent = dict[key];
+      }
+    }
+  });
+
+  const flag = langToggle.querySelector('.lang-flag');
+  const label = langToggle.querySelector('.lang-label');
+  if (lang === 'ar') { flag.textContent = '🇬🇧'; label.textContent = 'EN'; }
+  else { flag.textContent = '🇸🇦'; label.textContent = 'AR'; }
+
+  localStorage.setItem('mc_lang', lang);
+  goToSlide(currentSlide);
+}
+
+langToggle.addEventListener('click', () => {
+  const next = htmlEl.lang === 'ar' ? 'en' : 'ar';
+  applyLang(next);
+});
+
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle.querySelector('i');
+
+function applyTheme(theme) {
+  htmlEl.setAttribute('data-theme', theme);
+  themeIcon.className = theme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+  localStorage.setItem('mc_theme', theme);
+}
+
+themeToggle.addEventListener('click', () => {
+  const next = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+});
+
+applyLang(localStorage.getItem('mc_lang') || 'ar');
+applyTheme(localStorage.getItem('mc_theme') || 'dark');
+
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 30) header.classList.add('scrolled');
+  else header.classList.remove('scrolled');
+}, { passive: true });
+
+const drawer = document.getElementById('mobileDrawer');
+const backdrop = document.getElementById('drawerBackdrop');
+const openDrawer = () => { drawer.classList.add('open'); backdrop.classList.add('open'); };
+const closeDrawer = () => { drawer.classList.remove('open'); backdrop.classList.remove('open'); };
+document.getElementById('hamburger').addEventListener('click', openDrawer);
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+backdrop.addEventListener('click', closeDrawer);
+drawer.querySelectorAll('.nav-link').forEach(a => a.addEventListener('click', closeDrawer));
+
+// Scroll reveal
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+} else {
+  showAllReveal();
+}
+
+// Counters
+if ('IntersectionObserver' in window) {
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = +el.dataset.target;
+        const duration = 1800;
+        const start = performance.now();
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(eased * target);
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target;
+        };
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(c => counterObserver.observe(c));
+} else {
+  document.querySelectorAll('.counter').forEach(c => c.textContent = c.dataset.target);
+}
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    projectCards.forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) card.classList.remove('hide');
+      else card.classList.add('hide');
+    });
+  });
+});
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+projectCards.forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('img');
+    let src = img.currentSrc || img.src;
+    // upscale Unsplash w=800 → 1600; upscale Picsum 800/600 → 1600/1200
+    src = src.replace(/w=800/, 'w=1600').replace(/\/800\/600/, '/1600/1200');
+    lightboxImg.src = src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+  });
+});
+document.getElementById('lightboxClose').addEventListener('click', () => lightbox.classList.remove('open'));
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+
+// Testimonial autoplay
+dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+if (totalSlides > 0) {
+  setInterval(() => goToSlide((currentSlide + 1) % totalSlides), 5500);
+}
+
+function submitForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('fName').value.trim();
+  const phone = document.getElementById('fPhone').value.trim();
+  const service = document.getElementById('fService').value;
+  const msg = document.getElementById('fMsg').value.trim();
+
+  const isAr = htmlEl.lang === 'ar';
+  const body = isAr
+    ? `السلام عليكم،\nأنا: ${name}\nالجوال: ${phone}\nالخدمة: ${service}\nالرسالة: ${msg}`
+    : `Hello,\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${msg}`;
+
+  const url = `https://wa.me/966599804296?text=${encodeURIComponent(body)}`;
+  window.open(url, '_blank');
+  return false;
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const href = a.getAttribute('href');
+    if (href.length <= 1) return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const top = target.getBoundingClientRect().top + window.scrollY - 70;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
